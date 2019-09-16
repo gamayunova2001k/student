@@ -1,8 +1,6 @@
-﻿#include <iostream>
+#include <iostream>
 #include <sstream>
 #include <string>
-#include <cctype>
-#include <iterator>
 
 //Написать программу, которая во вводимом с клавиатуры тексте выберет слова, заканчивающиеся согласной буквой, и выведет их на экран.
 
