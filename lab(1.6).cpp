@@ -9,6 +9,23 @@ using namespace std;
 
 int main() {
 
+	string str, word;
+	int occurence = 0;
+
+	cout << "Enter text: \n";
+	getline(cin, str);
+
+	istringstream ist(str);
+
+	while (ist >> word)
+		occurence++;
+
+	cout << "The number of words in the text: " << occurence << endl;
+	return 0;
+}
+/*
+int main() {
+
 	string str;
 
 	cout << "Enter text: \n";
@@ -24,3 +41,4 @@ int main() {
 	cout << "The number of words in the text: " << m << endl;
 	return 0;
 }
+*/
