@@ -29,7 +29,7 @@ int main() {
 				cout << numbers[i] << " ";
 		}
 	for (int i = 0; i < size; i++)
-		if ((numbers[i] == 1) || (numbers[i] == 2))
+		if (numbers[i] == 2)
 			cout << numbers[i] << " ";
 
 	delete[] numbers;
