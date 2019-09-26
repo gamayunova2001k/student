@@ -10,21 +10,27 @@ using namespace std;
 
 int main() {
 
-	string s0, s1 = "x ", s2 = "z";
+	const int arrayLength = 250;
+
+	char text[arrayLength];
+	string word;
 
 	cout << "Enter text: \n";
-	getline(cin, s0);
 
-	for (int i = 0; i < s0.length(); i++)
-		if (s0[i] == s1[0] and s0[i + 1] == s1[1]) {
-			s0[i] = s2[0];
-		}
-	if (s0[s0.size() - 1] == 'x')
-		s0[s0.size() - 1] = 'z';
+	cin.get(text, arrayLength);
 
-	cout << "Result: \n" << s0;
+	istringstream ist(text);
+	while (ist >> word)
+		for (int i = 0; i < 1; i++)
+			if (*word.rbegin() == 'x') {
+				*word.rbegin() = 'z';
+				cout << word << " ";
+			}
+			else
+				cout << word << " ";
 	return 0;
 }
+
 
 /*
 int main() {
@@ -50,4 +56,25 @@ int main() {
 
 	return 0;
 }
+*/
+
+/*
+int main() {
+
+	string s0, s1 = "x ", s2 = "z";
+
+	cout << "Enter text: \n";
+	getline(cin, s0);
+
+	for (int i = 0; i < s0.length(); i++)
+		if (s0[i] == s1[0] and s0[i + 1] == s1[1]) {
+			s0[i] = s2[0];
+		}
+	if (s0[s0.size() - 1] == 'x')
+		s0[s0.size() - 1] = 'z';
+
+	cout << "Result: \n" << s0;
+	return 0;
+}
+
 */
