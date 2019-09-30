@@ -40,23 +40,25 @@ int main() {
 
 	string str, word;
 
-	char a[2] = {'x','z'};
+	char a[2] = { 'x','z' };
 
 	cout << "Enter text: \n";
 
 	getline(cin, str);
-	
+
 	istringstream ist(str);
 
-	while (ist >> word)
+	while (ist >> word) {
 		for (int i = 0; i < 1; i++) {
 			if (*word.rbegin() == a[0]) {
 				*word.rbegin() = a[1];
 				cout << word << " ";
 			}
-			else cout << word << " ";
+			else {
+				cout << word << " ";
+			}
 		}
-
+	}
 	return 0;
 }
 */
@@ -69,13 +71,14 @@ int main() {
 	cout << "Enter text: \n";
 	getline(cin, s0);
 
-	for (int i = 0; i < s0.length(); i++)
+	for (int i = 0; i < s0.length(); i++) {
 		if (s0[i] == s1[0] and s0[i + 1] == s1[1]) {
 			s0[i] = s2[0];
 		}
-	if (s0[s0.size() - 1] == 'x')
+	}
+	if (s0[s0.size() - 1] == 'x') {
 		s0[s0.size() - 1] = 'z';
-
+	}
 	cout << "Result: \n" << s0;
 	return 0;
 }
