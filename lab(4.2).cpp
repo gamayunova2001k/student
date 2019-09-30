@@ -12,7 +12,7 @@ using namespace std;
 
 void writeToFile() {
 	string str, word;
-	char vowel[10] = { 'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u' };
+	char vowel[5] = { 'A', 'E', 'I', 'O', 'U' };
 
 	ifstream file("file.txt");
 	ofstream outFile("outFile.txt");
@@ -20,8 +20,8 @@ void writeToFile() {
 
 		istringstream ist(str);
 		while (ist >> word) {
-			for (int i = 0; i < 10; i++) {
-				if (*word.begin() == vowel[i])
+			for (int i = 0; i < 5; i++) {
+				if (toupper(*word.begin()) == vowel[i])
 					outFile << word << endl;
 			}
 		}
