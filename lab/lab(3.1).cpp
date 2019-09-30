@@ -9,7 +9,6 @@
 using namespace std;
 
 int main() {
-
 	const int arrayLength = 250;
 
 	char text[arrayLength];
@@ -37,17 +36,13 @@ int main() {
 
 /*
 int main() {
-
 	string str, word;
-
 	char a[2] = { 'x','z' };
 
 	cout << "Enter text: \n";
-
 	getline(cin, str);
 
 	istringstream ist(str);
-
 	while (ist >> word) {
 		for (int i = 0; i < 1; i++) {
 			if (*word.rbegin() == a[0]) {
@@ -65,7 +60,6 @@ int main() {
 
 /*
 int main() {
-
 	string s0, s1 = "x ", s2 = "z";
 
 	cout << "Enter text: \n";
