@@ -8,12 +8,7 @@
 //Написать программу, которая в тексте файла заменит все окончания слов «x» на «z» и запишет результат в новый файл. 
 //Входные данные не ограничиваются одной строкой.
 
-using namespace std;
-
 void writeToFile() {
-
-	const int arrayLength = 500;
-	char text[arrayLength];
 	string str, word;
 
 	ifstream file("file.txt");
@@ -33,7 +28,7 @@ void writeToFile() {
 			}
 		}
 
-		outFile << "\n";	
+		outFile << "\n";
 	}
 }
 
