@@ -11,7 +11,7 @@ using namespace std;
 int main() {
 
 	string str, word;
-	char vowel[10] = {'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'};
+	char vowel[5] = {'A', 'E', 'I', 'O', 'U'};
 
 	cout << "Enter text: \n";
 	getline(cin, str);
@@ -20,8 +20,8 @@ int main() {
 	cout << "Matching words: \n";
 
 	while (ist >> word)
-		for (int i = 0; i < 10; i++) {
-			if (*word.begin() == vowel[i])
+		for (int i = 0; i < 5; i++) {
+			if (toupper(*word.begin()) == vowel[i])
 				cout << word << endl;
 		}
 	return 0;
