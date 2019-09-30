@@ -20,14 +20,17 @@ int main() {
 	cin.get(text, arrayLength);
 
 	istringstream ist(text);
-	while (ist >> word)
-		for (int i = 0; i < 1; i++)
+	while (ist >> word) {
+		for (int i = 0; i < 1; i++) {
 			if (*word.rbegin() == 'x') {
 				*word.rbegin() = 'z';
 				cout << word << " ";
 			}
-			else
+			else {
 				cout << word << " ";
+			}
+		}
+	}
 	return 0;
 }
 
