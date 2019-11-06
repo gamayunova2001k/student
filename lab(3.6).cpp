@@ -40,6 +40,7 @@ int main() {
 			m++;
 
 	cout << "The number of words in the text: " << m << endl;
+	
 	return 0;
 }
 */
