@@ -9,6 +9,7 @@
 using namespace std;
 
 int main() {
+	
 	const int arrayLength = 250;
 
 	char text[arrayLength];
