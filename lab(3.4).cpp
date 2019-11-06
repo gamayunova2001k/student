@@ -36,7 +36,7 @@ int main() {
 			wordX = word;
 		}
 	}
-
+	
 	cout << wordX;
 
 	return 0;
