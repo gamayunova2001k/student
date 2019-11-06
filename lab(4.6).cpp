@@ -24,6 +24,7 @@ void writeToFile() {
 			occurence++;
 		}
 	}
+	
 	outFile << occurence;
 }
 
