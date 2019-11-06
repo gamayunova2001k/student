@@ -11,6 +11,7 @@
 using namespace std;
 
 void writeToFile() {
+	
 	string str, word;
 	char vowel[5] = { 'A', 'E', 'I', 'O', 'U' };
 
