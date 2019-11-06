@@ -11,6 +11,7 @@
 using namespace std;
 
 void writeToFile() {
+	
 	string str, word;
 
 	ifstream file("file.txt");
