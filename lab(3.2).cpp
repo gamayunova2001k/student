@@ -24,5 +24,6 @@ int main() {
 			if (toupper(*word.begin()) == vowel[i])
 				cout << word << endl;
 		}
+	
 	return 0;
 }
